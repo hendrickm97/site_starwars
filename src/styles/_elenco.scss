@@ -1,0 +1,31 @@
+.elenco {
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  h1 {
+    font-size: 32px;
+  }
+  .actor-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      list-style: none;
+      max-width: 30%;
+      padding: 16px 4px;
+    }
+    img {
+      max-width: 100%;
+      height: 250px;
+      width: 380px;
+      justify-content: space-between;
+    }
+    h3 {
+      margin: 16px 0 6px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

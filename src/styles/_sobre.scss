@@ -1,0 +1,27 @@
+.sobre {
+  display: flex;
+  height: 100vh;
+  img {
+    padding-top: 80px;
+    padding-left: 200px;
+    width: 600px;
+    max-width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: #fff;
+    padding-top: 80px;
+    font-size: 32px;
+    margin: 0 auto;
+  }
+  p {
+    color: #fff;
+    margin-top: 30px;
+  }
+}

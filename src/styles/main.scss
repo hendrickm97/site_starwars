@@ -1,0 +1,109 @@
+@use "hero";
+@use "sobre";
+@use "elenco";
+@use "faq";
+@use "footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(../image/background.png);
+  min-height: 100vh;
+  background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-position: 50%;
+    &__title {
+      padding-top: 240px;
+      font-size: 54px;
+    }
+    &__subtitle {
+      font-size: 32px;
+    }
+  }
+  .sobre {
+    height: 90vh;
+    img {
+      padding-left: 100px;
+      width: 450px;
+    }
+    .text {
+      width: 100%;
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .elenco {
+    h1 {
+      font-size: 28px;
+    }
+    .actor-list {
+      margin-top: 10px;
+      li {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .hero {
+    background-position: 90%;
+    &__title {
+      font-size: 50px;
+      display: block;
+    }
+    &__subtitle {
+      font-size: 30px;
+      display: block;
+    }
+  }
+  .sobre {
+    align-items: center;
+    display: block;
+    img {
+      width: 400px;
+      position: relative;
+      padding-bottom: 2px;
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+    .text {
+      width: 80%;
+      max-width: 350px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 20px;
+      padding-top: 4px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 2px;
+    }
+  }
+  .elenco {
+    margin-top: 40px;
+    h1 {
+      font-size: 20px;
+    }
+    .actor-list {
+      margin-top: 10px;
+      li {
+        max-width: 100%;
+      }
+    }
+  }
+}
